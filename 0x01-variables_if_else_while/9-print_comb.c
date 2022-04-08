@@ -1,24 +1,30 @@
 #include <stdio.h>
 /**
  *
- * main - entry poit
- * Return: Always 0 (success/correct)
+ * main - Entry poit
+ * Return: Always 0 (Success/correct)
  */
 int main(void)
+
 {
-	int number;
+int number;
 
-	for (number = 48; number <= 57; number++)
-	{
-		putchar(number);
 
-		if (number == 57)
-		{break;
-		}
+for (number = 48; number <= 57; number++)
+{
+putchar(number);
 
-		putchar(',');
-		putchar (' ');
-	}
-	putchar('\n';
-			return (0);
-			}
+if (number == 57)
+{
+break;
+}
+
+putchar(',');
+putchar (' ');
+}
+
+putchar('\n';
+
+return (0);
+
+}
