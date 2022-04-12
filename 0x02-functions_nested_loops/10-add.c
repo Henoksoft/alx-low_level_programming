@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * add - prints add two numbers
+ * add -prints add two numbers
  * @i: print int i
  * @k: print int k
  * Retutn: Always 0.
