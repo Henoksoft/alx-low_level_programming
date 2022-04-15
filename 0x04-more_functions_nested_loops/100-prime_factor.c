@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - prime factors of 612852475143
- *
- * Return: int
+ * main - checks for checks for a digit (0 through 9).
+ * 
+ * Return: Always 0.
  */ 
 
 int main(void)
 {
-unsigned long n, i, max;
+long x, y;
 
-n = 612852475143;
-max = 1;
-for (i = 3; i <= n; i += 2)
+x = 612852475143;
+
+for (y = 2; x > y; y++)
 {
 	while (n % i == 0)
 	{
-		max = n;
-		n = n / i;
+		x = x / y;
 	}
 }
-printf("%lu\n", max;
-		return (0);
-		}
+printf("%lu", y);
+putchar('\n');
+return (0);
+}
