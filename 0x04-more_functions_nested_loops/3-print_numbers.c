@@ -15,5 +15,5 @@ for(i = o; i < 10; i++)
 
 _putchar(i + '0');
 
-_putchar ('\n');
+_putchar('\n');
 }
