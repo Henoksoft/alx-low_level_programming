@@ -48,7 +48,7 @@ char *_strstr(char *haystack, char *needle)
 	if (i == size)
 		return (ptr);
 	haystack = ptr;
-	haysack++;
+	haystack++;
 }
 return (NULL);
 }
