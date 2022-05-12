@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 /**
- * main - ...
- * @argc: ...
- * @argv: ...
- *
- * Return: ...
+ * main - Program that prints the minimum number of coins to make
+ * change for an amount of money
+ * @argc: - Int of arguments passed into program including command
+ * @argv: - Array of pointers to the strings of arguments passed
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int (*oprt)(int, int);
+	int num1, num2, result;
 
 	if (argc != 4)
 	{
@@ -19,14 +19,18 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	oprt = get_op_func(argv[2]);
-
-	if (!oprt)
+	if ((*argv[2] == 37 || *argv[2] == 47) && *argv[3] == 48)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 
-	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	num1 = atoi(arg[1]);
+	num2 = atoi(argv[3]);
+
+	result = get_op_func(argv[2])(num1, num2);
+
+	printf("%i\n", result);
+
 	return (0);
 }
