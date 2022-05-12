@@ -1,0 +1,1 @@
+README about variadic functions
