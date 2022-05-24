@@ -6,7 +6,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - Adds a new node at the 
+ * add_nodeint_end - Adds a new node at the
  * end of a listint_t list.
  * @head: Apointer to the address of the head
  * of the listint_t list.
@@ -32,7 +32,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	else
 	{
 		last = *head;
-		whlie (last->next != NULL)
+		while (last->next != NULL)
 			last = last->next;
 		last->next = new;
 	}
