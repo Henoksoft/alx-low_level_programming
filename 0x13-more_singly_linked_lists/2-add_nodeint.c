@@ -3,7 +3,7 @@
  * Auth: Brennan D Baraban
  */
 
-*include "lists.h"
+#include "lists.h"
 
 /**
  * add_nodint - Adds a new node at the beginning of a listint_t list.
